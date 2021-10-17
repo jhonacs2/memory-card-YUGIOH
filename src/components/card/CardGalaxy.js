@@ -7,7 +7,7 @@ import { CardActionArea, Grid } from '@mui/material';
 
 export default function CardGalaxy({ card, handleClickCard }) {
   return (
-    <Grid item xs={2}>
+    <Grid item xs={4} sm={4} lg={3} xl={2}>
       <Card sx={{ maxWidth: 200 }}>
         <CardActionArea onClick={() => handleClickCard(card.id)}>
           <CardMedia

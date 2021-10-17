@@ -42,6 +42,7 @@ export const CardsScreen = ({
     if (matchCards.includes(id)) {
       initialGame();
       setScore(0);
+      setLevel(0);
       setMatchCards([]);
     }
 
@@ -53,7 +54,7 @@ export const CardsScreen = ({
   };
 
   return (
-    <Grid item container>
+    <Grid item container spacing={2}>
       {randomeCards.map((card) => (
         <CardGalaxy
           key={card.id}
