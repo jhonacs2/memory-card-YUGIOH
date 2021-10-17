@@ -14,7 +14,9 @@ const getFiveCards = () => {
   return request.then((response) => response.data.data);
 };
 
-export default {
+const cardService = {
   getCard,
   getFiveCards,
 };
+
+export default cardService;
